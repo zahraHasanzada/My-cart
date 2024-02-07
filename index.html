@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment02</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?icon.query=copyright">
+</head>
+<body>
+    <div class="header">
+        <h1> My Cart</h1>
+    </div>
+    <div class="cart">
+       <div id="pic1">
+        <figure>
+            <img src="imag/ldora.jpg" alt="shampoo">
+            <figcaption >SHAMPOO</figcaption>
+            <span class="price1"> 15</span>$
+        </figure>
+       </div>
+       <div id="pic2">
+        <figure>
+            <img src="imag/ldora1.jpg" alt="Soap">
+            <figcaption >SOAP</figcaption>
+            <span class="price2"> 35</span>$
+        </figure>
+       </div>
+       <div id="pic3">
+        <figure>
+            <img src="imag/ldora2.jpg" alt="Eaudeparfum">
+            <figcaption >EAUDEPARFUM</figcaption>
+            <span class="price3"> 50</span>$
+        </figure>
+       </div>
+       <div id="pic4">
+        <figure>
+            <img src="imag/ldora3.jpg" alt="shampoo">
+            <figcaption >FACE MASK</figcaption>
+            <span class="price4"> 80</span>$
+        </figure>
+       </div>
+        
+    </div>
+    <div class="subTotal">
+        <Strong>Cart SubTotal:</Strong>
+        <span id=total>0</span>$
+     </div>
+    <footer>
+        <p><strong>Made:</strong> By Zahra Hasanzade</p>
+        <i class="material-icons">copyright</i>
+    </footer>
+       
+      
+      <script>
+        
+        document.querySelector('#pic1').onclick = function(){
+         let total = document.querySelector("#total").textContent;
+         total = parseInt(total);
+         total += 15;
+         document.querySelector('#total').textContent = total ;
+         
+        }
+        document.querySelector('#pic2').onclick = function(){
+         let total = document.querySelector("#total").textContent;
+         total = parseInt(total);
+         total += 15;
+         document.querySelector('#total').textContent = total ;
+        }
+        document.querySelector('#pic3').onclick = function(){
+         let total = document.querySelector("#total").textContent;
+         total = parseInt(total);
+         total += 15;
+         document.querySelector('#total').textContent = total ;
+        }
+        document.querySelector('#pic4').onclick = function(){
+         let total = document.querySelector("#total").textContent;
+         total = parseInt(total);
+         total += 15;
+         document.querySelector('#total').textContent = total ;
+        }
+
+      </script>
+</body>
+</html>
